@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FullHeal : Ability {
 
-	public override void PlayRecieveAnim (RPGcharacter caster)
+	public override void PlayCastAnim (RPGcharacter caster)
 	{
 		{
 			caster.cAnimate.PlayHealAnim ();
