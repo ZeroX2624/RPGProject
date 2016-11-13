@@ -34,7 +34,7 @@ public class BattleLoaderTest : MonoBehaviour {
 	}
 
 	void LoadScene(){	
-		UnityEngine.SceneManagement.SceneManager.LoadScene (3);
+		UnityEngine.SceneManagement.SceneManager.LoadScene (5);
 	}
 
 }
