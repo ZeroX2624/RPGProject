@@ -104,7 +104,7 @@ public class BattleManager : MonoBehaviour {
 		//print ("enemy attacks");
 		thisAbility.PlayCastAnim(enemy);
 		thisAbility.PlayRecieveAnim (player);
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(2f);
 
 		//apply damage
 		thisAbility.Cast(enemy, player);
