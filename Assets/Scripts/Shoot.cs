@@ -20,4 +20,5 @@ public class Shoot : Ability {
 		target.HP = target.HP - 10;
 
 	}
+
 }

@@ -21,7 +21,8 @@ public class BattleLoaderTest : MonoBehaviour {
 		bManager.player = player;
 		bManager.enemy = enemy;
 
-
+		bManager.onPlayerWin = PlayMovie;
+		bManager.onEnemyWin = ReloadScene;
 		bManager.OnGameOver = LoadScene;
 	}
 
@@ -29,12 +30,13 @@ public class BattleLoaderTest : MonoBehaviour {
 		print ("player won! play a movie file");
 	}
 
+
 	void ReloadScene(){
 		print ("player lost! let's restart the scene");
 	}
 
 	void LoadScene(){	
-		UnityEngine.SceneManagement.SceneManager.LoadScene (5);
+		UnityEngine.SceneManagement.SceneManager.LoadScene (8);
 	}
 
 }

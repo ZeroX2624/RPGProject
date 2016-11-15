@@ -22,7 +22,7 @@ public class BattleManager : MonoBehaviour {
 
 	public Action OnGameOver;
 
-	private IEnumerator coroutine;
+	//private IEnumerator coroutine;
 
 
 	void Start (){
@@ -55,26 +55,29 @@ public class BattleManager : MonoBehaviour {
 		StartCoroutine (BattleRoutine (currentAbility));
 	}
 
-	void CheckIfBattleOver(){
+	public void CheckIfBattleOver(){
+
+		print ("Battle's done, man!");
+
 		if (enemy.HP <= 0) {
 			onPlayerWin ();
 		}
 		else if (player.HP <= 0) {
-			onEnemyWin ();
+			print ("Player lost, man!");
+			if (onEnemyWin == null)
+				print ("I'm null");
+				//onEnemyWin ();
+
 		}
 	}
-
-
-
+		
 
 	public void CheckifDead(RPGcharacter target){
 		if (target.HP <= 0) {
 			target.cAnimate.PlayDieAnim ();
 			print ("dead");
 
-
-			StopCoroutine (coroutine);
-			OnGameOver ();
+			CheckIfBattleOver ();
 
 		}
 	}

@@ -21,6 +21,6 @@ public class HealthBar : MonoBehaviour {
 
 
 		hInfo.text = (health.value + "/" + health.maxValue);
-		hManager.defenderHP.text = (health.value + "/" + health.maxValue);
+		hManager.attackerHP.text = (health.value + "/" + health.maxValue);
 	}
 }

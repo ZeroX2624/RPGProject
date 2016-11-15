@@ -16,8 +16,10 @@ public class Fire : Ability {
 	{
 		print ("Burn!");
 
-		caster.cAnimate.PlayFireAnim ();
+
 		target.HP = target.HP - 10;
+
+
 
 	}
 }

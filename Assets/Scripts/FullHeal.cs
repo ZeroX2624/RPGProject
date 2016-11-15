@@ -16,4 +16,5 @@ public class FullHeal : Ability {
 		caster.HP = caster.maxHP;
 	}
 
+
 }
