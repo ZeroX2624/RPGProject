@@ -16,11 +16,11 @@ public class HealthBar : MonoBehaviour {
 
 
 	void Update () {
-		health.maxValue = charName.maxHP;
-		health.value = Mathf.Lerp (health.value, charName.HP, Time.deltaTime * 50f);
+		//health.maxValue = charName.maxHP;
+		//health.value = Mathf.Lerp (health.value, charName.HP, Time.deltaTime * 50f);
 
 
-		hInfo.text = (health.value + "/" + health.maxValue);
-		hManager.attackerHP.text = (health.value + "/" + health.maxValue);
+		//hInfo.text = (health.value + "/" + health.maxValue);
+		//hManager.attackerHP.text = (health.value + "/" + health.maxValue);
 	}
 }

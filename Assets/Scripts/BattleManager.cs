@@ -66,7 +66,7 @@ public class BattleManager : MonoBehaviour {
 			print ("Player lost, man!");
 			if (onEnemyWin == null)
 				print ("I'm null");
-				//onEnemyWin ();
+				onEnemyWin ();
 
 		}
 	}

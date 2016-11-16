@@ -21,6 +21,10 @@ public class BattleLoaderTest : MonoBehaviour {
 		bManager.player = player;
 		bManager.enemy = enemy;
 
+		HealthManager hManager = bSystem.GetComponentInChildren<HealthManager> ();
+		hManager.attacker = player;
+		hManager.defender = enemy;
+
 		bManager.onPlayerWin = PlayMovie;
 		bManager.onEnemyWin = ReloadScene;
 		bManager.OnGameOver = LoadScene;
